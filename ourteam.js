@@ -23,7 +23,7 @@ console.log(teamList['names'][0])
 for(i=0; i < teamList['names'].length; i++ ){
     const textName = document.createElement("p");
     const totalNames = teamList['names'][i];
-    textName.innerText(totalNames);
+    textName.innerText = totalNames;
     console.log(totalNames);
     
 }
