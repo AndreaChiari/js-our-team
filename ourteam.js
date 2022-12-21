@@ -1,7 +1,17 @@
 console.log('JS OK')
 
 //prendo gli elementi dal DOM
+let header = document.getElementById('header');
 let main = document.getElementById('main');
+
+//strutturo l'header
+const title = document.createElement('h4')
+header.append(title)
+title.innerText = 'OUR TEAM'
+const description = document.createElement('p')
+header.append(description)
+description.innerText = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio perspiciatis animi, quibusdam id nam harum dignissimos. Quibusdam maiores esse animi fugiat culpa, voluptatibus in earum officia, suscipit explicabo sequi laudantium!'
+description.classList.add("text-center");
 
 //creo degli oggetti con le informazioni richieste
 const teamList = [
@@ -13,14 +23,14 @@ const teamList = [
 {name: 'Barbara Ramos', role: 'Graphic designer', img: 'barbara-ramos-graphic-designer.jpg'}
 
 ]
-console.log(teamList)
+console.log(teamList[1].name)
 
 //creo un ciclo for nel quale vado ad inserire ogni singolo elemento e stamparlo in pagina
 
 for(i=0; i < teamList.length; i++ ){
-    let totalNames = teamList[i];
+    let name = teamList[i];
     let container = document.createElement('div');
     main.append(container)
-    container.append(totalNames);
+    container.append(name);
     console.log(container);
 }

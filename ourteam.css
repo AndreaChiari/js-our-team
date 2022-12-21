@@ -1,3 +1,4 @@
+
 div{
     height: 200px;
     width: 200px;
@@ -6,4 +7,9 @@ div{
 img{
     width: 100%;
     height: auto;
+}
+
+.container{
+    max-width: 600px;
+
 }
