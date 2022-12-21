@@ -3,7 +3,8 @@ console.log('JS OK')
 //prendo gli elementi dal DOM
 let header = document.getElementById('header');
 let main = document.getElementById('main');
-
+let Container = document.createElement('div')
+ main.append(Container)
 //strutturo l'header
 const title = document.createElement('h4')
 header.append(title)
@@ -23,14 +24,15 @@ const teamList = [
 {name: 'Barbara Ramos', role: 'Graphic designer', img: 'barbara-ramos-graphic-designer.jpg'}
 
 ]
-console.log(teamList[1].name)
+console.log(teamList[1].name,teamList[2].name)
 
 //creo un ciclo for nel quale vado ad inserire ogni singolo elemento e stamparlo in pagina
 
 for(i=0; i < teamList.length; i++ ){
-    let name = teamList[i];
-    let container = document.createElement('div');
-    main.append(container)
-    container.append(name);
-    console.log(container);
+    let card = teamList[i];
+    console.log(card.name);
+    Container.append(card.name);
+    Container.append(card.role);
+    Container.append(card.img);
+   
 }
