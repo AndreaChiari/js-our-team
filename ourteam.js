@@ -9,13 +9,17 @@ container.appendChild(img);
 
 
 //creo un array con le informazioni richieste
-const teamList = {
-    names: ['wayne barnett','Walter Gordon','Scott Estrada','Barbara Ramos','Angela Lopez','Barbara Ramos'],
-    roles: ['Founder and CEO','Chief Editor','Office Manager','Social Media Manager','Developer','Graphic Designer']
+const teamList = [
+{name: 'wayne barnett', role: 'CEO', img: 'wayne-barnett-founder-ceo.jpg'},
+{name: 'Angela Caroll', role: 'Chief Editor', img: 'angela-caroll-chief-editor.jpg'},
+{name: 'Walter Gordon', role: 'Office Manager', img: 'walter-gordon-office-manager.jpg'},
+{name: 'Angela Lopez', role: 'Social Media Manager', img: 'angela-lopez-social-media-manager.jpg'},
+{name: 'Scott Estrada', role: 'Developer', img: 'scott-estrada-developer.jpg'},
+{name: 'Barbara Ramos', role: 'Graphic designer', img: 'barbara-ramos-graphic-designer.jpg'}
     
     
-}
-
+]
+console.log(teamList)
 
 //creo un ciclo for nel quale vado ad inserire ogni singolo elemento e stamparlo in pagina
 let textName = document.createElement("div");
